@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="guess.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎯 Multi-Level Guessing Game</h1>
+    <h2 id="level">Level: Easy</h2>
+    <p id="lives">Lives: 5</p>
+    <input type="number" id="guessInput" placeholder="Enter guess (1-100)" min="1" max="100"/>
+    <button onclick="checkGuess()" id="submit">Submit</button>
+    <button onclick="useHint()">Use Hint</button>
+    <p id="hintCount">Hints left: 2</p>
+    <p id="message"></p>
+    <button id="resetButton" onclick="resetGame()">Restart</button>
+
+    <div id="levelUpAnimation" class="hidden">🎉 LEVEL UP! 🎉</div>
+  </div>
+  
+  <script src="guess.js"></script>
+</body>
+</html>
